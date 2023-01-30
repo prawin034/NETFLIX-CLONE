@@ -1,0 +1,56 @@
+.Header {
+  position: relative;
+  width: 100%;
+  // height: 50vh;
+  z-index: 1;
+
+  &_box {
+    &_img {
+      width: 100%;
+      height: 55rem;
+      background-size: cover;
+      filter: brightness(0.5);
+    }
+
+    &_contentbox {
+      position: absolute;
+      top: 40%;
+      left: 10%;
+      &_h1 {
+        color: $color-white;
+        text-transform: capitalize;
+        font-size: $text-super-big;
+        margin-bottom: 1.5rem;
+      }
+      &_p {
+        font-size: $text-big;
+        text-transform: capitalize;
+        color: $color-light-Grey;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+      }
+      &_detail {
+        font-size: $text-medium;
+        color: $color-white;
+        text-transform: capitalize;
+        font-weight: 300;
+      }
+      &_btn {
+        margin-bottom: 2rem;
+        font-size: $text-big;
+        text-transform: capitalize;
+        border: none;
+        background-color: $color-white;
+        padding: 1rem 2rem;
+        margin-right: 1rem;
+        cursor: pointer;
+
+        &:last-child {
+          background-color: black;
+          border: 1px solid #fff;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

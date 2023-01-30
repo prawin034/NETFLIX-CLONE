@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  z-index: 100;
+  position: absolute;
+  width: 95%;
+
+  &_h1 {
+    color: $color-red;
+    font-size: $text-super-big;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-decoration: none;
+  }
+  &_li {
+    text-decoration: none;
+  }
+  &_box {
+    &_btn {
+      border: none;
+      background-color: $color-red;
+      color: $color-white;
+      padding: 1.3rem 2.4rem;
+      border-radius: 0.5rem;
+      margin-right: 1rem;
+      text-transform: capitalize;
+      font-size: $text-default;
+      cursor: pointer;
+
+      &_special_fn {
+        background-color: black;
+        border: 2px solid white;
+      }
+    }
+  }
+}

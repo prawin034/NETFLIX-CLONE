@@ -1,0 +1,77 @@
+.signup {
+  &_img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    filter: brightness(0.4);
+  }
+  &_form {
+    min-width: 40rem;
+    height: 40rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    background: linear-gradient(to right bottom, #000000b5, #00000078);
+
+    &_box {
+      text-align: center;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      &_h1 {
+        font-size: $text-super-big;
+        color: $color-white;
+        margin-bottom: 1rem;
+        letter-spacing: 2px;
+      }
+
+      &_signin {
+        color: $color-white;
+        font-size: $text-medium;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+
+        align-items: center;
+        &_span {
+          color: $color-stylish;
+        }
+      }
+
+      &_input {
+        width: 100%;
+        height: 4rem;
+        padding: 0.5rem;
+        margin-bottom: 2.5rem;
+        display: block;
+        background-color: $color-dark-grey;
+        border: none;
+      }
+      &_btn {
+        display: inline-block;
+        font-size: $text-default;
+        padding: 1.5rem 2rem;
+        background-color: #c92a2a;
+        border: none;
+        color: $color-white;
+        cursor: pointer;
+        letter-spacing: 1px;
+        border-radius: 1.1rem;
+        margin-bottom: 1rem;
+      }
+      &_detail {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_flex {
+          font-size: 1.5rem;
+          color: $color-white;
+          margin-left: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
